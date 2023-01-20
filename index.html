@@ -1,1 +1,134 @@
-Hello World !
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.svg" type="image/svg" title="My Website">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous:wght@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b6b73c6dff.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
+    
+    <link rel="stylesheet" href="./index.css">
+    
+    <title>Nyato Beats | Accueil</title>
+    <!-- <link rel="stylesheet" href="css/accueil.css"> -->
+</head>
+<body>
+    <!-- <header>
+        <nav class="navbar">
+            <a href="index.html"><img src="images/logo2white.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" class="selected">Accueil</a></li>
+                    <li><a href="monunivers.html">Mon Univers</a></li>
+                    <li><a href="monexposition.html">Mon Expo</a></li>
+                    <li><a href="mescollaborations.html">Mes Collaborations</a></li>
+                    <li><a href="marecommandation.html">Ma Recommandation</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header> -->
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top p-0" data-bs-theme="dark">
+            <div class="container-fluid justify-content-center" style="height: 3rem">
+                <a class="navbar-brand p-0" href="#">
+                    <img src="./images/logo.svg" alt="NyatoBeats" style="width: 3rem; height: 3rem;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 p-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mon Univers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mon Expo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mes Collaborations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ma Recommandation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="pt-5 mt-2">
+        <div class="container-fluid snap">
+            <div class="row justify-content-center vh-navbar">
+                <div class="col col-auto d-flex flex-column align-content-center justify-content-center h-100">
+                    <h1 class="text-center">Beatmaker Français</h1>
+                    <p class="text-center">Je fais des instrumentales aux genres variés depuis maintenant plus de 3 ans<br>Ainsi que des musiques electroniques divers.</p>
+                    <a href="monunivers.html" class="btn btn-outline-primary align-self-center" style="width: fit-content;">EN SAVOIR PLUS</a>
+                </div>
+                <video id="video" class="vh-navbar" muted autoplay loop>
+                    <source src="media/bg.mp4" type="video/mp4"> 
+                </video>
+            </div>
+            <div class="row">
+                <div class="col d-flex flex-column align-content-center justify-content-center vh-navbar">
+                    <div class="row justify-content-center">
+                        <div class="col col-auto d-flex flex-column align-content-center justify-content-center">
+                            <h1 class="text-center">Mon Exposition</h1>
+                            <p class="text-center">Retrouvez mes différents contenus</p>
+                        </div>
+                    </div>
+                    <div class="row text-center column-gap-3 m-2 mb-3">
+                        <div class="col expo">
+                            <a href="monexposition.html">
+                                <h3  class="mt-3">INSTRUMENTALES</h3>
+                                <p>Vous pourrez retrouver mes instrumentales récemment sorti ainsi que certaines en cours de production en avant première.</p>
+                            </a>
+                        </div>
+                        <div class="col expo">
+                            <a href="monexposition.html"">
+                                <h3  class="mt-3">MUSIQUES</h3>
+                                <p>Vous pourrez retrouver mes musiques récemment sorti ainsi que certaines encore en cours de production en avant première.</p>
+                            </a>
+                        </div>
+                        <div class="col expo">
+                            <a href="monexposition.html">
+                                <h3  class="mt-3">AUTRES</h3>
+                                <p>Vous pourrez retrouver d'autres projets récemment sorti ainsi que certains en cours de production en avant première.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row text-center mb-3 d-flex flex-column align-content-center justify-content-center vh-navbar">
+                <div class="col col-auto">
+                    <h1>Mes Collabs</h1>
+                    <p>Retrouvez toutes mes collaborations !</p>
+                    <a href="mescollaborations.html" class="btn btn-outline-primary align-self-center" style="width: fit-content;">EN SAVOIR PLUS</a>
+                </div>
+            </div>
+            <div class="row text-center mb-3 d-flex flex-column align-content-center justify-content-center vh-navbar">
+                <div class="col col-auto">
+                    <h1>Ma recommandation</h1>
+                    <p>Retrouvez les artistes que je vous conseille !</p>
+                    <a href="mescollaborations.html" class="btn btn-outline-primary align-self-center" style="width: fit-content;">EN SAVOIR PLUS</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            Footer
+        </div>
+    </footer>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
